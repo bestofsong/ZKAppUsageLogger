@@ -40,7 +40,6 @@ const char *kLastAppear = "VC(ZKLifeCycleSwizzling)kLastAppear";
   if (lastDate) {
     double duration = -[lastDate timeIntervalSinceNow];
     [[ZKAppUsageLogger sharedInstance] logPageName:[self guessTitle] duration:@(duration)];
-    NSLog(@"%@ duration: %@", [self guessTitle], @(duration));
     objc_setAssociatedObject(self, kLastAppear, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
   }
 }
@@ -51,15 +50,12 @@ const char *kLastAppear = "VC(ZKLifeCycleSwizzling)kLastAppear";
       [self isKindOfClass:UIAlertController.class]) {
     return YES;
   }
-  if (![self guessTitle]) {
-    return YES;
-  }
   
   return NO;
 }
 
 - (NSString *)guessTitle {
-  return self.title ?: (self.navigationItem.title ?: nil);
+  return self.title ?: (self.navigationItem.title ?: NSStringFromClass(self.class));
 }
 
 @end

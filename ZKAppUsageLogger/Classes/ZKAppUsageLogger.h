@@ -15,9 +15,13 @@ typedef void (^LogSendHandler) (NSDictionary *detailedInfo);
 
 + (instancetype) sharedInstance;
 
++ (NSString*) idfaString;
+
 // configurations: { logSendHandler(必需), device_id（可选，默认会获取idfa） }
 - (void)config:(NSDictionary *)configurations;
 
-- (void)logAppEntrance:(NSString*)pageName;
+- (void)logPageEntrance:(NSString*)pageName;
+
+- (void)logAppLaunch;
 
 @end

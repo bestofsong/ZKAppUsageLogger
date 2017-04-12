@@ -31,7 +31,7 @@
 
 - (NSString*)device_id {
   if (!_device_id) {
-    _device_id = [self.class identifierForAdvertising];
+    _device_id = [self.class idfaString];
   }
   return _device_id;
 }
@@ -50,12 +50,12 @@
 }
 
 - (void)logAppLaunch {
-  [self logType:@"打开app" detailedInfo:nil];
+  [self logType:@"打开app" detailedInfo:@{}];
 }
 
-- (void)logAppEntrance:(NSString*)pageName {
-  NSString *type = [NSString stringWithFormat:@"app进入%@页", pageName];
-  [self logType:type detailedInfo:nil];
+- (void)logPageEntrance:(NSString*)pageName {
+  NSString *type = [NSString stringWithFormat:@"app进入%@", pageName];
+  [self logType:type detailedInfo:@{}];
 }
 
 - (void)logType:(NSString*)type detailedInfo:(NSDictionary*)detailedInfo {
@@ -66,10 +66,12 @@
                           @"event_type": type ?: @"",
                           @"detailedInfo": detailedInfoWithDeviceId,
                           });
+  } else {
+    NSLog(@"warning: 无法发送cps事件，启动时须要config");
   }
 }
 
-+ (NSString *)identifierForAdvertising {
++ (NSString*) idfaString {
   if([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
     NSUUID *IDFA = [[ASIdentifierManager sharedManager] advertisingIdentifier];
     return [IDFA UUIDString];
