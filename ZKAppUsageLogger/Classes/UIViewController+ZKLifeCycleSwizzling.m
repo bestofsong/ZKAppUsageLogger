@@ -24,11 +24,18 @@ const char *kLastAppear = "VC(ZKLifeCycleSwizzling)kLastAppear";
 
 - (void)zhike_viewDidAppear:(BOOL)animated {
   [self zhike_viewDidAppear:animated];
+  if ([self shouldIgnore]) {
+    return;
+  }
+
   objc_setAssociatedObject(self, kLastAppear, [NSDate date], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)zhike_viewDidDisappear:(BOOL)animated {
   [self zhike_viewDidDisappear:animated];
+  if ([self shouldIgnore]) {
+    return;
+  }
   NSDate *lastDate = (NSDate*)objc_getAssociatedObject(self, kLastAppear);
   if (lastDate) {
     double duration = -[lastDate timeIntervalSinceNow];
@@ -38,8 +45,21 @@ const char *kLastAppear = "VC(ZKLifeCycleSwizzling)kLastAppear";
   }
 }
 
+- (BOOL)shouldIgnore {
+  if ([self isKindOfClass:UINavigationController.class] ||
+      [self isKindOfClass:UITabBarController.class] ||
+      [self isKindOfClass:UIAlertController.class]) {
+    return YES;
+  }
+  if (![self guessTitle]) {
+    return YES;
+  }
+  
+  return NO;
+}
+
 - (NSString *)guessTitle {
-  return self.title ?: (self.navigationItem.title ?: @"none");
+  return self.title ?: (self.navigationItem.title ?: nil);
 }
 
 @end
