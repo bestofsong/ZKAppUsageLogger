@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2248DFBEBCC0D44B7B6E56F6E79B4E3D /* Pods-ZKAppUsageLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA08A0AEF886B9D77C9D7146EF3992C /* Pods-ZKAppUsageLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		295B739C8F76486FF3C65CFDAE8D2416 /* ZKAppUsageLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5040CD35AA3BD842221587630430FE /* ZKAppUsageLogger-dummy.m */; };
+		2D6FD2B769055EEF5A7909C3E31D9F12 /* UIViewController+ZKLifeCycleSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 7497E1D63119AF087F768DCF1A2A28AA /* UIViewController+ZKLifeCycleSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECBA5A9E13583F12A25845638556791 /* Pods-ZKAppUsageLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 852C926EE8665A929C2579E18DC10B8F /* Pods-ZKAppUsageLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3274424D3D0B2A6671CAA9501C282F70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */; };
+		3D18DF20F7932229598CD964CAEE22AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */; };
+		3DF0FBD3E59D87323827D9DC7B5A656C /* JRSwizzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9025F99F939C0781698B8985790B96D1 /* JRSwizzle-dummy.m */; };
+		4E962449F2DC5BF696EF871F5F9653B5 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9B1A5AB3DAD13FDCEB60528F049C9C /* JRSwizzle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A252913812A1B8F935EC85728A498D1 /* Pods-ZKAppUsageLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A8CD8ED3A46A4E4EE811A8BAAB8ED /* Pods-ZKAppUsageLogger_Example-dummy.m */; };
+		7CB2E750D2865081A8C8C05662C66D36 /* ZKAppUsageLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = EC60AC2E589627EEE7B0071498C26CA6 /* ZKAppUsageLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF2EB9D6272D9B05A79ADC92610CE36 /* JRSwizzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D5600F6709F0C7768E5E0B63AC2839 /* JRSwizzle.framework */; };
+		9C3F54C03C718741F89B19D6A2A65206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */; };
+		9D30F98BD58B15E3F64044D5E79F603C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5CC4EF6E3858A778A6153FAE25FC7B /* UIKit.framework */; };
+		A8C98D483D800B96E37AA5069EF04E68 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AAF80FAA376DDFB5641007B4C12BC6A /* JRSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4FCF350616D1DFBA566DFE3BEEC27E7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CF01DB15CA6C4F1DC675555DDC8859 /* AdSupport.framework */; };
+		B503FE04A9C2074EE478C4B76E89DAEA /* JRSwizzle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3168E173986ABDC8653062ABF526ECB4 /* JRSwizzle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0F5D6EDDE83294ED9DCA7C76479B95A /* ZKAppUsageLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 290618DEA5282CEDC20C4B84C6688CEE /* ZKAppUsageLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9B0CCC57D6588B7323CB74021893DB0 /* UIViewController+ZKLifeCycleSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B757EC7BA648B9328BC22AD7869DE6 /* UIViewController+ZKLifeCycleSwizzling.m */; };
+		DEDEC040E5AC17120B1DAFAB7056DE41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */; };
+		ED2D6B83F4C1010BC5B7A4C774D64B54 /* ZKAppUsageLoggerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AAEE652F965677DBA636BDD32B68892 /* ZKAppUsageLoggerPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F40452238B045216381321AD43E8AD03 /* Pods-ZKAppUsageLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E363174485770ABFF58C316721623FAA /* Pods-ZKAppUsageLogger_Tests-dummy.m */; };
+		F4A8A6D5179E2B4B20F8108404FC17D0 /* ZKAppUsageLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2EC0ED4AB289D0B332480BF8FFA51F /* ZKAppUsageLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62F97DF83A530A60208BA981A14354C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E7B86C60FCB91858074F7C2F733BE5;
+			remoteInfo = JRSwizzle;
+		};
+		80E195D09753C12D1E7FEFA8DAA1CA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5E7B86C60FCB91858074F7C2F733BE5;
+			remoteInfo = JRSwizzle;
+		};
+		AD376804B648DF96BEA22D7BC63D17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57CCDFF27A2C2F1A55260089477BB6B4;
+			remoteInfo = ZKAppUsageLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F1B9A9DEE9C8BFC486D507522FDF63F /* Pods-ZKAppUsageLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKAppUsageLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27F64A2BC752C4C08120B3DED2FDD9C1 /* Pods-ZKAppUsageLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZKAppUsageLogger_Tests.modulemap"; sourceTree = "<group>"; };
+		290618DEA5282CEDC20C4B84C6688CEE /* ZKAppUsageLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppUsageLogger-umbrella.h"; sourceTree = "<group>"; };
+		2AAEE652F965677DBA636BDD32B68892 /* ZKAppUsageLoggerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZKAppUsageLoggerPrivate.h; sourceTree = "<group>"; };
+		312CC39BD30DBFBFD922F2565B84B370 /* Pods-ZKAppUsageLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppUsageLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3168E173986ABDC8653062ABF526ECB4 /* JRSwizzle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JRSwizzle-umbrella.h"; sourceTree = "<group>"; };
+		343BC6D194CEB4D61F610803FC35502D /* Pods-ZKAppUsageLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppUsageLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3BF64CE3DB2B24B430AB85CEFF85BFA2 /* Pods-ZKAppUsageLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppUsageLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		40402686788C5845288A3E7F1CFDDC2E /* Pods-ZKAppUsageLogger_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppUsageLogger_Tests-resources.sh"; sourceTree = "<group>"; };
+		46BE00B08F50B82BFE37682C3F55C1D7 /* Pods-ZKAppUsageLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ZKAppUsageLogger_Example.modulemap"; sourceTree = "<group>"; };
+		4BFF331FC6C070F50F73EF9B53F52B34 /* ZKAppUsageLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKAppUsageLogger.xcconfig; sourceTree = "<group>"; };
+		4C33A23201AD12CB2FABB81E3F46B8AD /* JRSwizzle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JRSwizzle.modulemap; sourceTree = "<group>"; };
+		4E0DF2C2143128D0464F8BF7BC096669 /* Pods_ZKAppUsageLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKAppUsageLogger_Tests.framework; path = "Pods-ZKAppUsageLogger_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDC1EB250EE9E1B014ACBD76A894A60 /* Pods-ZKAppUsageLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppUsageLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AAF80FAA376DDFB5641007B4C12BC6A /* JRSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		5B46EC1636A7EBC5AFFFB58FEBA92090 /* Pods-ZKAppUsageLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppUsageLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BDF67F88B3BD60A3FA6E2A9B7CA576B /* Pods_ZKAppUsageLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKAppUsageLogger_Example.framework; path = "Pods-ZKAppUsageLogger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5040CD35AA3BD842221587630430FE /* ZKAppUsageLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKAppUsageLogger-dummy.m"; sourceTree = "<group>"; };
+		627A8CD8ED3A46A4E4EE811A8BAAB8ED /* Pods-ZKAppUsageLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKAppUsageLogger_Example-dummy.m"; sourceTree = "<group>"; };
+		655E3A65F9D1373942FEEFFC4786B6BC /* ZKAppUsageLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppUsageLogger-prefix.pch"; sourceTree = "<group>"; };
+		6790E0A31C9E96AF90D62E7FAF449E49 /* ZKAppUsageLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ZKAppUsageLogger.modulemap; sourceTree = "<group>"; };
+		7497E1D63119AF087F768DCF1A2A28AA /* UIViewController+ZKLifeCycleSwizzling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZKLifeCycleSwizzling.h"; sourceTree = "<group>"; };
+		7A2EC0ED4AB289D0B332480BF8FFA51F /* ZKAppUsageLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZKAppUsageLogger.m; sourceTree = "<group>"; };
+		8035338BF564DAD1AAAEF8D34C2BA07C /* JRSwizzle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JRSwizzle-prefix.pch"; sourceTree = "<group>"; };
+		852C926EE8665A929C2579E18DC10B8F /* Pods-ZKAppUsageLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKAppUsageLogger_Example-umbrella.h"; sourceTree = "<group>"; };
+		87DB00A51B02E2432DC92CBC06B98BB3 /* Pods-ZKAppUsageLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppUsageLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9025F99F939C0781698B8985790B96D1 /* JRSwizzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JRSwizzle-dummy.m"; sourceTree = "<group>"; };
+		9383007AC81D8D6E37DE1AACB5330DA6 /* JRSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JRSwizzle.framework; path = JRSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B757EC7BA648B9328BC22AD7869DE6 /* UIViewController+ZKLifeCycleSwizzling.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZKLifeCycleSwizzling.m"; sourceTree = "<group>"; };
+		9CA08A0AEF886B9D77C9D7146EF3992C /* Pods-ZKAppUsageLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKAppUsageLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
+		9F5152636E1400B87F58F537A0406663 /* Pods-ZKAppUsageLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKAppUsageLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB8474305C0BFC9E1040FD33EF847D25 /* Pods-ZKAppUsageLogger_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppUsageLogger_Example-resources.sh"; sourceTree = "<group>"; };
+		B7CF01DB15CA6C4F1DC675555DDC8859 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		BD3FED53396164DD35718C9815D12459 /* Pods-ZKAppUsageLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppUsageLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C28792562541D40D8FCEF90D96C98E75 /* JRSwizzle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JRSwizzle.xcconfig; sourceTree = "<group>"; };
+		D08AE1A125D24203AC896DBB19F75BB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4905B6B31AD40B9285C8DD4A91FB0A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5CC4EF6E3858A778A6153FAE25FC7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E363174485770ABFF58C316721623FAA /* Pods-ZKAppUsageLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKAppUsageLogger_Tests-dummy.m"; sourceTree = "<group>"; };
+		E494633923CC576B21BFC7E5A19D3752 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB00ADE0DD8527D0E85E8F7643D36BC /* Pods-ZKAppUsageLogger_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppUsageLogger_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		EC60AC2E589627EEE7B0071498C26CA6 /* ZKAppUsageLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZKAppUsageLogger.h; sourceTree = "<group>"; };
+		F7128E0E5DA81CC0EE2EECCF38F9053A /* ZKAppUsageLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZKAppUsageLogger.framework; path = ZKAppUsageLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76F725D1E276C78DE3F66B39BF03C3C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D5600F6709F0C7768E5E0B63AC2839 /* JRSwizzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JRSwizzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9B1A5AB3DAD13FDCEB60528F049C9C /* JRSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A52B89DB6F0154312503C35543B4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEDEC040E5AC17120B1DAFAB7056DE41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AA96A2833FB9A7C66D8DFAD6D1E2420 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4FCF350616D1DFBA566DFE3BEEC27E7 /* AdSupport.framework in Frameworks */,
+				9C3F54C03C718741F89B19D6A2A65206 /* Foundation.framework in Frameworks */,
+				8BF2EB9D6272D9B05A79ADC92610CE36 /* JRSwizzle.framework in Frameworks */,
+				9D30F98BD58B15E3F64044D5E79F603C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680D29EE0DCD8291F542B9AAE4D1A853 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3274424D3D0B2A6671CAA9501C282F70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814BC1C8B367CFA531DCC7C3D6CCD05A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D18DF20F7932229598CD964CAEE22AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		016875EA53DEA2815F9FD327A47FFAD1 /* ZKAppUsageLogger */ = {
+			isa = PBXGroup;
+			children = (
+				793051735612F819235FEB2C6752347F /* Classes */,
+			);
+			name = ZKAppUsageLogger;
+			path = ZKAppUsageLogger;
+			sourceTree = "<group>";
+		};
+		0693D222B1680221AE9E59003013706D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E494633923CC576B21BFC7E5A19D3752 /* Info.plist */,
+				4C33A23201AD12CB2FABB81E3F46B8AD /* JRSwizzle.modulemap */,
+				C28792562541D40D8FCEF90D96C98E75 /* JRSwizzle.xcconfig */,
+				9025F99F939C0781698B8985790B96D1 /* JRSwizzle-dummy.m */,
+				8035338BF564DAD1AAAEF8D34C2BA07C /* JRSwizzle-prefix.pch */,
+				3168E173986ABDC8653062ABF526ECB4 /* JRSwizzle-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JRSwizzle";
+			sourceTree = "<group>";
+		};
+		2727B8C939FE8A791703086E5B59C86C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D5600F6709F0C7768E5E0B63AC2839 /* JRSwizzle.framework */,
+				8A3A0C1AC23E5619E94668F248C5091E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61230A1F0B4DCAE87A36445ED037EEE9 /* Pods-ZKAppUsageLogger_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F76F725D1E276C78DE3F66B39BF03C3C /* Info.plist */,
+				27F64A2BC752C4C08120B3DED2FDD9C1 /* Pods-ZKAppUsageLogger_Tests.modulemap */,
+				9F5152636E1400B87F58F537A0406663 /* Pods-ZKAppUsageLogger_Tests-acknowledgements.markdown */,
+				5B46EC1636A7EBC5AFFFB58FEBA92090 /* Pods-ZKAppUsageLogger_Tests-acknowledgements.plist */,
+				E363174485770ABFF58C316721623FAA /* Pods-ZKAppUsageLogger_Tests-dummy.m */,
+				EBB00ADE0DD8527D0E85E8F7643D36BC /* Pods-ZKAppUsageLogger_Tests-frameworks.sh */,
+				40402686788C5845288A3E7F1CFDDC2E /* Pods-ZKAppUsageLogger_Tests-resources.sh */,
+				9CA08A0AEF886B9D77C9D7146EF3992C /* Pods-ZKAppUsageLogger_Tests-umbrella.h */,
+				4FDC1EB250EE9E1B014ACBD76A894A60 /* Pods-ZKAppUsageLogger_Tests.debug.xcconfig */,
+				BD3FED53396164DD35718C9815D12459 /* Pods-ZKAppUsageLogger_Tests.release.xcconfig */,
+			);
+			name = "Pods-ZKAppUsageLogger_Tests";
+			path = "Target Support Files/Pods-ZKAppUsageLogger_Tests";
+			sourceTree = "<group>";
+		};
+		745F1C572426B9F80AE1C265EA400C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5E9A17196E415D5B95204993A06EB02 /* JRSwizzle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		793051735612F819235FEB2C6752347F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7497E1D63119AF087F768DCF1A2A28AA /* UIViewController+ZKLifeCycleSwizzling.h */,
+				95B757EC7BA648B9328BC22AD7869DE6 /* UIViewController+ZKLifeCycleSwizzling.m */,
+				EC60AC2E589627EEE7B0071498C26CA6 /* ZKAppUsageLogger.h */,
+				7A2EC0ED4AB289D0B332480BF8FFA51F /* ZKAppUsageLogger.m */,
+				2AAEE652F965677DBA636BDD32B68892 /* ZKAppUsageLoggerPrivate.h */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				88678C3CB9B14727FB33ABC113BA0EFF /* Development Pods */,
+				2727B8C939FE8A791703086E5B59C86C /* Frameworks */,
+				745F1C572426B9F80AE1C265EA400C0E /* Pods */,
+				B977E9C1267F29FF2D08664F1CA0FCD9 /* Products */,
+				8E0FBAEA1D9986AFCB8BCBB51CA91C51 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		88678C3CB9B14727FB33ABC113BA0EFF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A71112828A0FF0BA3E1631AA5302A3B3 /* ZKAppUsageLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		8A3A0C1AC23E5619E94668F248C5091E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7CF01DB15CA6C4F1DC675555DDC8859 /* AdSupport.framework */,
+				BF1319A45B50216817D4A801161F0AFD /* Foundation.framework */,
+				DA5CC4EF6E3858A778A6153FAE25FC7B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8E0FBAEA1D9986AFCB8BCBB51CA91C51 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D04D9EDEAE5B6D80C0D5205B5C09DE1A /* Pods-ZKAppUsageLogger_Example */,
+				61230A1F0B4DCAE87A36445ED037EEE9 /* Pods-ZKAppUsageLogger_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A71112828A0FF0BA3E1631AA5302A3B3 /* ZKAppUsageLogger */ = {
+			isa = PBXGroup;
+			children = (
+				DBA13F86F5C7594BAE61971543119B77 /* Support Files */,
+				016875EA53DEA2815F9FD327A47FFAD1 /* ZKAppUsageLogger */,
+			);
+			name = ZKAppUsageLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B977E9C1267F29FF2D08664F1CA0FCD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9383007AC81D8D6E37DE1AACB5330DA6 /* JRSwizzle.framework */,
+				5BDF67F88B3BD60A3FA6E2A9B7CA576B /* Pods_ZKAppUsageLogger_Example.framework */,
+				4E0DF2C2143128D0464F8BF7BC096669 /* Pods_ZKAppUsageLogger_Tests.framework */,
+				F7128E0E5DA81CC0EE2EECCF38F9053A /* ZKAppUsageLogger.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04D9EDEAE5B6D80C0D5205B5C09DE1A /* Pods-ZKAppUsageLogger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D4905B6B31AD40B9285C8DD4A91FB0A6 /* Info.plist */,
+				46BE00B08F50B82BFE37682C3F55C1D7 /* Pods-ZKAppUsageLogger_Example.modulemap */,
+				0F1B9A9DEE9C8BFC486D507522FDF63F /* Pods-ZKAppUsageLogger_Example-acknowledgements.markdown */,
+				312CC39BD30DBFBFD922F2565B84B370 /* Pods-ZKAppUsageLogger_Example-acknowledgements.plist */,
+				627A8CD8ED3A46A4E4EE811A8BAAB8ED /* Pods-ZKAppUsageLogger_Example-dummy.m */,
+				87DB00A51B02E2432DC92CBC06B98BB3 /* Pods-ZKAppUsageLogger_Example-frameworks.sh */,
+				AB8474305C0BFC9E1040FD33EF847D25 /* Pods-ZKAppUsageLogger_Example-resources.sh */,
+				852C926EE8665A929C2579E18DC10B8F /* Pods-ZKAppUsageLogger_Example-umbrella.h */,
+				3BF64CE3DB2B24B430AB85CEFF85BFA2 /* Pods-ZKAppUsageLogger_Example.debug.xcconfig */,
+				343BC6D194CEB4D61F610803FC35502D /* Pods-ZKAppUsageLogger_Example.release.xcconfig */,
+			);
+			name = "Pods-ZKAppUsageLogger_Example";
+			path = "Target Support Files/Pods-ZKAppUsageLogger_Example";
+			sourceTree = "<group>";
+		};
+		D5E9A17196E415D5B95204993A06EB02 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				5AAF80FAA376DDFB5641007B4C12BC6A /* JRSwizzle.h */,
+				FA9B1A5AB3DAD13FDCEB60528F049C9C /* JRSwizzle.m */,
+				0693D222B1680221AE9E59003013706D /* Support Files */,
+			);
+			name = JRSwizzle;
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		DBA13F86F5C7594BAE61971543119B77 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D08AE1A125D24203AC896DBB19F75BB1 /* Info.plist */,
+				6790E0A31C9E96AF90D62E7FAF449E49 /* ZKAppUsageLogger.modulemap */,
+				4BFF331FC6C070F50F73EF9B53F52B34 /* ZKAppUsageLogger.xcconfig */,
+				5C5040CD35AA3BD842221587630430FE /* ZKAppUsageLogger-dummy.m */,
+				655E3A65F9D1373942FEEFFC4786B6BC /* ZKAppUsageLogger-prefix.pch */,
+				290618DEA5282CEDC20C4B84C6688CEE /* ZKAppUsageLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZKAppUsageLogger";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F39875707A60FF0FBFEE847D4A2E1DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B503FE04A9C2074EE478C4B76E89DAEA /* JRSwizzle-umbrella.h in Headers */,
+				A8C98D483D800B96E37AA5069EF04E68 /* JRSwizzle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426DB5905A7E11D7DCA528755E888DD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6FD2B769055EEF5A7909C3E31D9F12 /* UIViewController+ZKLifeCycleSwizzling.h in Headers */,
+				C0F5D6EDDE83294ED9DCA7C76479B95A /* ZKAppUsageLogger-umbrella.h in Headers */,
+				7CB2E750D2865081A8C8C05662C66D36 /* ZKAppUsageLogger.h in Headers */,
+				ED2D6B83F4C1010BC5B7A4C774D64B54 /* ZKAppUsageLoggerPrivate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565798F54F30BD94048EEFBFF2B83262 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECBA5A9E13583F12A25845638556791 /* Pods-ZKAppUsageLogger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6103F4ADEFAF2704F40E3848DA7D4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2248DFBEBCC0D44B7B6E56F6E79B4E3D /* Pods-ZKAppUsageLogger_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		458459D33E77A39FE588211850859387 /* Pods-ZKAppUsageLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92D2A99D549B087DA1EFB86BF8B9833B /* Build configuration list for PBXNativeTarget "Pods-ZKAppUsageLogger_Example" */;
+			buildPhases = (
+				8D57A4A80169CC2BD1A01B6BF0420D10 /* Sources */,
+				814BC1C8B367CFA531DCC7C3D6CCD05A /* Frameworks */,
+				565798F54F30BD94048EEFBFF2B83262 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9279179F5727D418498A1D29AB527838 /* PBXTargetDependency */,
+				53536107D250F57928393BC6377FD1FA /* PBXTargetDependency */,
+			);
+			name = "Pods-ZKAppUsageLogger_Example";
+			productName = "Pods-ZKAppUsageLogger_Example";
+			productReference = 5BDF67F88B3BD60A3FA6E2A9B7CA576B /* Pods_ZKAppUsageLogger_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		57CCDFF27A2C2F1A55260089477BB6B4 /* ZKAppUsageLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5C87512269615981F5284EF5E8151A4 /* Build configuration list for PBXNativeTarget "ZKAppUsageLogger" */;
+			buildPhases = (
+				1597FA559107B64A1FC6A7B8FAD431B0 /* Sources */,
+				2AA96A2833FB9A7C66D8DFAD6D1E2420 /* Frameworks */,
+				426DB5905A7E11D7DCA528755E888DD1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826828358374CD6706F531C0E427953C /* PBXTargetDependency */,
+			);
+			name = ZKAppUsageLogger;
+			productName = ZKAppUsageLogger;
+			productReference = F7128E0E5DA81CC0EE2EECCF38F9053A /* ZKAppUsageLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A77A896D7BD1E2EC05058EED1A8CADAB /* Pods-ZKAppUsageLogger_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF37C99B469033C411ADAEC341842799 /* Build configuration list for PBXNativeTarget "Pods-ZKAppUsageLogger_Tests" */;
+			buildPhases = (
+				0783D6E48E7D60451B9A2D3AB74660FB /* Sources */,
+				680D29EE0DCD8291F542B9AAE4D1A853 /* Frameworks */,
+				EE6103F4ADEFAF2704F40E3848DA7D4D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ZKAppUsageLogger_Tests";
+			productName = "Pods-ZKAppUsageLogger_Tests";
+			productReference = 4E0DF2C2143128D0464F8BF7BC096669 /* Pods_ZKAppUsageLogger_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5E7B86C60FCB91858074F7C2F733BE5 /* JRSwizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB7E4A191A2188BE7C8E30FE682DB2E /* Build configuration list for PBXNativeTarget "JRSwizzle" */;
+			buildPhases = (
+				6C192372F9220548B74119C3A7966FA5 /* Sources */,
+				03A52B89DB6F0154312503C35543B4EC /* Frameworks */,
+				1F39875707A60FF0FBFEE847D4A2E1DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRSwizzle;
+			productName = JRSwizzle;
+			productReference = 9383007AC81D8D6E37DE1AACB5330DA6 /* JRSwizzle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B977E9C1267F29FF2D08664F1CA0FCD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5E7B86C60FCB91858074F7C2F733BE5 /* JRSwizzle */,
+				458459D33E77A39FE588211850859387 /* Pods-ZKAppUsageLogger_Example */,
+				A77A896D7BD1E2EC05058EED1A8CADAB /* Pods-ZKAppUsageLogger_Tests */,
+				57CCDFF27A2C2F1A55260089477BB6B4 /* ZKAppUsageLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0783D6E48E7D60451B9A2D3AB74660FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40452238B045216381321AD43E8AD03 /* Pods-ZKAppUsageLogger_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1597FA559107B64A1FC6A7B8FAD431B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9B0CCC57D6588B7323CB74021893DB0 /* UIViewController+ZKLifeCycleSwizzling.m in Sources */,
+				295B739C8F76486FF3C65CFDAE8D2416 /* ZKAppUsageLogger-dummy.m in Sources */,
+				F4A8A6D5179E2B4B20F8108404FC17D0 /* ZKAppUsageLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C192372F9220548B74119C3A7966FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF0FBD3E59D87323827D9DC7B5A656C /* JRSwizzle-dummy.m in Sources */,
+				4E962449F2DC5BF696EF871F5F9653B5 /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D57A4A80169CC2BD1A01B6BF0420D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A252913812A1B8F935EC85728A498D1 /* Pods-ZKAppUsageLogger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53536107D250F57928393BC6377FD1FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZKAppUsageLogger;
+			target = 57CCDFF27A2C2F1A55260089477BB6B4 /* ZKAppUsageLogger */;
+			targetProxy = AD376804B648DF96BEA22D7BC63D17DB /* PBXContainerItemProxy */;
+		};
+		826828358374CD6706F531C0E427953C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JRSwizzle;
+			target = F5E7B86C60FCB91858074F7C2F733BE5 /* JRSwizzle */;
+			targetProxy = 80E195D09753C12D1E7FEFA8DAA1CA27 /* PBXContainerItemProxy */;
+		};
+		9279179F5727D418498A1D29AB527838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JRSwizzle;
+			target = F5E7B86C60FCB91858074F7C2F733BE5 /* JRSwizzle */;
+			targetProxy = 62F97DF83A530A60208BA981A14354C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2212EFAD076637DE5B45B22B6DE53FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28792562541D40D8FCEF90D96C98E75 /* JRSwizzle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JRSwizzle/JRSwizzle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JRSwizzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JRSwizzle/JRSwizzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JRSwizzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		38928C5FCD4270029DC6D8B0389014F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FDC1EB250EE9E1B014ACBD76A894A60 /* Pods-ZKAppUsageLogger_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Tests/Pods-ZKAppUsageLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZKAppUsageLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D1C26269CE593781D841D474D3266E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFF331FC6C070F50F73EF9B53F52B34 /* ZKAppUsageLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZKAppUsageLogger/ZKAppUsageLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZKAppUsageLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZKAppUsageLogger/ZKAppUsageLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ZKAppUsageLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B9F28AD6ED8AC979CA0D9062D9B6EFB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343BC6D194CEB4D61F610803FC35502D /* Pods-ZKAppUsageLogger_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Example/Pods-ZKAppUsageLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZKAppUsageLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA828D817859975C2EBA17D9B4D690FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3FED53396164DD35718C9815D12459 /* Pods-ZKAppUsageLogger_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Tests/Pods-ZKAppUsageLogger_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZKAppUsageLogger_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DA79F534EE4B0480F48F191761939D90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFF331FC6C070F50F73EF9B53F52B34 /* ZKAppUsageLogger.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ZKAppUsageLogger/ZKAppUsageLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZKAppUsageLogger/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZKAppUsageLogger/ZKAppUsageLogger.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ZKAppUsageLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6E6F7C119BA4426E43D5EC2F16D70BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF64CE3DB2B24B430AB85CEFF85BFA2 /* Pods-ZKAppUsageLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppUsageLogger_Example/Pods-ZKAppUsageLogger_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ZKAppUsageLogger_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF9E0BE24DE7C999312EA02FF65D8EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C28792562541D40D8FCEF90D96C98E75 /* JRSwizzle.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JRSwizzle/JRSwizzle-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JRSwizzle/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JRSwizzle/JRSwizzle.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JRSwizzle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92D2A99D549B087DA1EFB86BF8B9833B /* Build configuration list for PBXNativeTarget "Pods-ZKAppUsageLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E6F7C119BA4426E43D5EC2F16D70BC /* Debug */,
+				B9F28AD6ED8AC979CA0D9062D9B6EFB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF37C99B469033C411ADAEC341842799 /* Build configuration list for PBXNativeTarget "Pods-ZKAppUsageLogger_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38928C5FCD4270029DC6D8B0389014F7 /* Debug */,
+				BA828D817859975C2EBA17D9B4D690FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5C87512269615981F5284EF5E8151A4 /* Build configuration list for PBXNativeTarget "ZKAppUsageLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1C26269CE593781D841D474D3266E1 /* Debug */,
+				DA79F534EE4B0480F48F191761939D90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB7E4A191A2188BE7C8E30FE682DB2E /* Build configuration list for PBXNativeTarget "JRSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF9E0BE24DE7C999312EA02FF65D8EA7 /* Debug */,
+				2212EFAD076637DE5B45B22B6DE53FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

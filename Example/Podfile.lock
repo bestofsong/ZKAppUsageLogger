@@ -1,0 +1,19 @@
+PODS:
+  - JRSwizzle (1.0)
+  - ZKAppUsageLogger (0.1.0):
+    - JRSwizzle
+
+DEPENDENCIES:
+  - ZKAppUsageLogger (from `../`)
+
+EXTERNAL SOURCES:
+  ZKAppUsageLogger:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  ZKAppUsageLogger: e193ab79c1c6658001dd5a21b5df1eaf588311df
+
+PODFILE CHECKSUM: 047ba4a9354c898329b64e51adefb3b63d05f0b0
+
+COCOAPODS: 1.2.0

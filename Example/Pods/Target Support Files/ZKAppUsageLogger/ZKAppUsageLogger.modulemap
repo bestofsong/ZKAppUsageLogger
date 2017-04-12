@@ -1,0 +1,6 @@
+framework module ZKAppUsageLogger {
+  umbrella header "ZKAppUsageLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
