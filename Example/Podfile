@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZKAppUsageLogger_Example' do
+  pod 'ZKAppUsageLogger', :path => '../'
+
+  target 'ZKAppUsageLogger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
