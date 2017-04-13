@@ -6,6 +6,25 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZKAppUsageLogger.svg?style=flat)](http://cocoapods.org/pods/ZKAppUsageLogger)
 
 ## Example
+```
+1. 配置
+[[ZKAppUsageLogger sharedInstance] config:
+@{@"logSendHandler": ^(NSDictionary *cpsInfo) {
+  if (cpsInfo) {
+    [CpsManager postCpsInfo:@[cpsInfo] success:nil failure:nil];
+  }
+}}];
+------------------------------------------------------------------------------------------
+2.app启动
+[[ZKAppUsageLogger sharedInstance] logAppLaunch];
+------------------------------------------------------------------------------------------
+3.进入X页面
+[[ZKAppUsageLogger sharedInstance] logPageEntrance:@"注册页"];
+------------------------------------------------------------------------------------------
+4.页面停留时长
+由UIViewController+ZKLifeCycleSwizzling自动执行
+```
+
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
